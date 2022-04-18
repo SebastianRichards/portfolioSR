@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="cvPage">
+  <a href="{% static 'webapp/images/sebastianRichards.pdf' %}" download cv>
+    <button id="downloadbtncv" type="button" class="btn btn-primary">Download</button>
+  </a>
+
+  <img class="cv" src="{% static 'webapp/images/cvFinal.png' %}">
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+
+<script>
+   
+    const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+        
+    tl.fromTo(".cvPage", { opacity: 0 }, { opacity: 1, duration: 0.2 });
+
+
+</script>
+{% endblock %}
