@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+
+
 body {
     background-image: url("images/background3.jpeg");
     color: aliceblue;
@@ -233,9 +238,7 @@ p {
         padding-bottom: 5px;
     }
 
-    .smallerBig{
-        padding-top: 45%;
-    }
+    
 
     
 
@@ -347,14 +350,6 @@ p {
    
 }
 
-.big-text {
-    margin-top: 5%;
-    text-align: center;
-    font-size: 5rem;
-    font-family: "Anybody", cursive;
-    color: aliceblue;
-    
-  }
 
 
 
@@ -454,13 +449,7 @@ p {
    margin-bottom: 1%;
 }
 
-.smallerBig {
-    font-size:large;
-    margin-top: 12%;
-    text-align: center;
-    font-family: "Anybody", cursive;
 
-}
 
 .contactPage {
     text-align: center;
@@ -472,4 +461,117 @@ p {
 
 .contactDetails {
     margin-top: 10%
+}
+
+.big-text {
+    text-align: center;
+    font-size: 5rem;
+    font-family: "Anybody", cursive;
+    color: aliceblue;
+    
+  }
+
+.smallerBig {
+    font-size:large;
+    text-align: center;
+    font-family: "Anybody", cursive;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+
+.neonBtn{
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    width: 240px;
+    height: 75px;
+    border: 1px solid aliceblue;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+   
+}
+
+.neonBtn:hover{
+    background: aliceblue;
+    color: #050801;
+    box-shadow: 0 0 5px aliceblue,
+                0 0 25px aliceblue,
+                0 0 50px aliceblue,
+                0 0 200px aliceblue;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+
+.neonBtn:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+
+.neonBtn span{
+    position: absolute;
+    display: block;
+}
+
+
+
+.homeContainer {
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "big-text"
+        "smallerBig"
+        "neonBtn";
+    
+    padding-bottom: 2%;
+    }
+    
+
+
+@media only screen and (min-width: 1700px) {
+    .smallerBig {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+
+    .projectText{
+        margin-top: 3%;
+    }
+
+    .imageSection{
+
+        margin-top: 3%;
+
+    }
+
+    .contactDetails{
+        text-size-adjust: 130%;
+    }
+
+    .contactFont{
+        font-size: 400%;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1900px) {
+
+
+    .projectText{
+        margin-top: 5%;
+    }
+
+    .imageSection{
+
+        margin-top: 5%;
+
+    }
+
 }
