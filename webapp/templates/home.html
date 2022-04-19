@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1 class="text-center big-text">Welcome</h1>
-    <h2 class="big-text smallerBig">A computer science graduate looking to start immediately in a software/web developer role</h2>
+    <h1 class="text-center big-text welcomeText">Welcome</h1>
+    <h2 class="smallerBig">A computer science graduate looking to start immediately in a software/web developer role</h2>
     <div class="intro">
         <div class="intro-text">
           <h1 class="hide">
@@ -27,8 +27,10 @@
         tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
         tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
         tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
-        
         tl.fromTo(".big-text", { opacity: 0 }, { opacity: 1, duration: 1 });
+        tl.fromTo(".smallerBig", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
+        
+       
 
     </script>
 

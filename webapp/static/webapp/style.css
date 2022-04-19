@@ -232,6 +232,18 @@ p {
         padding-top: 5px;
         padding-bottom: 5px;
     }
+
+    .smallerBig{
+        padding-top: 45%;
+    }
+
+    
+
+ 
+
+    
+
+   
     
 }
 
@@ -339,11 +351,15 @@ p {
     position: absolute;
     top: 30%;
     left: 50%;
+    text-align: center;
     transform: translate(-50%, -30%);
     font-size: 5rem;
     font-family: "Anybody", cursive;
     color: aliceblue;
+    
   }
+
+
 
 .intro {
     background: black;
@@ -443,8 +459,9 @@ p {
 
 .smallerBig {
     font-size:large;
-    margin-top: 14%;
+    margin-top: 30%;
     text-align: center;
+    font-family: "Anybody", cursive;
 
 }
 
