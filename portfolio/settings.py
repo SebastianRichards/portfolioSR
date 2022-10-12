@@ -135,6 +135,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'webapp/static')
 ]
 
+X_FRAME_OPTIONS = 'ALLOWALL'
+
+XS_SHARING_ALLOWED_METHODS = ['POST','GET','OPTIONS', 'PUT', 'DELETE']
+
 
 STATICFILES_STORAGE ='whitenoise.storage.CompressedManifestStaticFilesStorage'
 

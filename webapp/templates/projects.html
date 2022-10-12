@@ -20,7 +20,7 @@
               <img class="imageResize" src="{% static 'webapp/images/digitaltwin.jpeg' %}">
               <div class="info">
                 <a class="btn btn-dark alignLeft" href="{% url 'digitaltwin' %}">View Project</a>
-                <a class="btn btn-dark alignRight" href="https://github.com/SebastianRichards/DigitalTwin">View Code</a>
+                <a class="btn btn-dark alignRight" href="{% url 'thesis' %}">View Thesis</a>
                 <a class="infoBtn" href="#">
                   <img class="iconImage" id="info2" src="{% static 'webapp/images/infoIcon.png' %}">
                 </a>
@@ -53,7 +53,7 @@
     </div>
     <div id="divBox2">
       <h1>Digital Twin of a Chemical Microreactor</h1>
-      <p>This digital twin uses python and OOP to allow the user to model and create digital replicas of real world microreactos</p>
+      <p>This application utilises the MERN stack to interface with OPC UA, allowing a user to specify a virtual microreactor which initialises an OPC UA server containing the specified information. With the expressJS backend, users can make backend API calls to trigger OPC UA client calls to communicate with the newly initiated OPC UA server. More information can be found by clicking the thesis button.</p>
     </div>
     <div id="divBox3">
       <h1>Don't Take That Bait Game</h1>

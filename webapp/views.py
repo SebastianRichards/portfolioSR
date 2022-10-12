@@ -20,3 +20,6 @@ def game(request):
 
 def digitaltwin(request):
     return render(request, "digitaltwin.html")
+
+def thesis(request):
+    return render(request, "thesis.html")
