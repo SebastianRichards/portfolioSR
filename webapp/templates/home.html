@@ -32,7 +32,7 @@
     <div class="intro">
         <div class="intro-text">
           <h1 class="hide">
-            <span class="text">Sebastian Richards</span>
+            <span class="text"><img src="{% static 'webapp/images/logosr.png' %}" alt="logoimg" class="srlogoimage1"></span>
           </h1>
           <h1 class="hide">
             <span class="text">Software Developer</span>
@@ -54,7 +54,7 @@
         tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
         tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 
-        tl.fromTo(".neonBtn", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1"); 
+        tl.fromTo(".neonBtn", { opacity: 0 }, { opacity: 1, duration: 1, delay: 1 }, "-=1"); 
 
        
       
