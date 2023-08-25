@@ -23,3 +23,9 @@ def digitaltwin(request):
 
 def thesis(request):
     return render(request, "thesis.html")
+
+def aspnetproject(request):
+    return render(request, "aspnetproject.html")   
+
+def currentproject(request):
+    return render(request, "currentproject.html")   

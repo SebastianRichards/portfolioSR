@@ -19,14 +19,18 @@
   </head>
   <body>
       
-      <div class="container">
-        <nav class="navbar navbar-expand-sm navbar-dark">
-            <a class="navbar-brand" href="{% url 'home' %}">
-                <img src="{% static 'webapp/images/logo.png' %}" alt="logoimg" class="srlogoimage">
-            </a>
+      <div class="container navcolor">
         
+        <nav class="navbar navbar-expand-sm navbar-dark">
+          
+          
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img src="{% static 'webapp/images/logosr.png' %}" alt="logoimg" class="srlogoimage">
+            </a>
+            
+            
             <button 
-            	class="navbar-toggler" 
+            	class="navbar-toggler toggleButton" 
             	type="button" 
             	data-bs-toggle="collapse" 
             	data-bs-target="#toggleMobileMenu" 
@@ -36,11 +40,11 @@
             >
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <div class="collapse navbar-collapse justify-content-center" id="toggleMobileMenu">
             
-                <ul class="navbar-nav ms-auto text-center">
+                <ul class="navbar-nav ms-auto text-center alignIt align-">
                     <li>
-                        <a class="nav-link" href="{% url 'cv' %}">CV</a>
+                        <a class="nav-link w-100" href="{% url 'cv' %}">CV</a>
                     </li>
                     <li>
                         <a class="nav-link" href="{% url 'projects' %}">Projects</a>
@@ -52,34 +56,40 @@
                 
 
             </div>
+           
         </nav>
+        
       </div>
       
       {% block content %}
 
       {% endblock %}
-      
-      
 
-      <footer id="footer">
+
+      <footer class="footer" id="footer">
         <div id="footerContainer">
           <div id="footerCol1">
             <a id="fcc" href="https://github.com/SebastianRichards">
-              <img id="gitIcon" src="{% static 'webapp/images/githubIcon.png' %}">
-            </a>
-          </div>
-          <div id="footerCol2">
-            <a id="fcc" href="mailto:sebastianrichards@me.com";>
-              <img id="mailIcon" src="{% static 'webapp/images/mailIcon.png' %}">
+              <img id="gitIcon" src="{% static 'webapp/images/gitimage.png' %}">
             </a>
           </div>
           <div id="footerCol3">
             <a id="fcc" href="https://www.linkedin.com/in/sebastian-richards-306730179/">
-              <img id="linkedIcon" src="{% static 'webapp/images/linkedinIcon.png' %}">
+              <img id="linkedIcon" src="{% static 'webapp/images/linkedicon.png' %}">
             </a>
           </div>
+          <div id="footerCol2">
+            <a id="fcc" href="mailto:sebastianrichards@me.com";>
+              <img id="mailIcon" src="{% static 'webapp/images/mailicon.png' %}">
+            </a>
+          </div>
+          
         </div>
       </footer>
+      
+      
+      
+      
       
 
     
@@ -93,7 +103,9 @@
     <script src="{% static 'webapp/app.js' %}"></script>
 
    
-
+    
 
   </body>
+
+  
 </html>

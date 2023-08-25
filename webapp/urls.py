@@ -9,4 +9,6 @@ urlpatterns = [
     path('game/', views.game, name="game"),
     path('digitaltwin/', views.digitaltwin, name="digitaltwin"),
     path('thesis/', views.thesis, name="thesis"),
+    path('aspnetproject/', views.aspnetproject, name="aspnetproject"),
+    path('currentproject/', views.currentproject, name="currentproject"),
 ]

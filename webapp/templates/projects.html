@@ -2,44 +2,8 @@
 {% load static %}
 
 {% block content %}
+<!--
 <div class="projectsPage">
-  <div class="imageSection">
-      <div class="container paddingContainer">
-        <div class="row">
-          <div class="col-md-4 col-sm-12 borderEraser">
-            <img class="imageResize" src="{% static 'webapp/images/srblogthumb.jpg' %}">
-            <div class="info">
-              <a class="btn btn-dark alignLeft btn1" href="http://sebastianrichards.pythonanywhere.com/">View Project</a>
-              <a class="btn btn-dark alignRight btn2" href="https://github.com/SebastianRichards/FlaskBlog">View Code</a>
-              <a class="infoBtn" href="#">
-                <img class="iconImage" id="info1" src="{% static 'webapp/images/infoIcon.png' %}">
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 borderEraser mobileHeightz">
-              <img class="imageResize" src="{% static 'webapp/images/digitaltwin.jpeg' %}">
-              <div class="info">
-                <a class="btn btn-dark alignLeft" href="{% url 'digitaltwin' %}">View Project</a>
-                <a class="btn btn-dark alignRight" href="{% url 'thesis' %}">View Thesis</a>
-                <a class="infoBtn" href="#">
-                  <img class="iconImage" id="info2" src="{% static 'webapp/images/infoIcon.png' %}">
-                </a>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-12 borderEraser">
-            <img class="imageResize" src="{% static 'webapp/images/mariopicthumb.jpg' %}">
-            <div class="info">
-              <a class="btn btn-dark alignLeft" href="{% url 'game' %}">View Project</a>
-              <a class="btn btn-dark alignRight" href="https://github.com/SebastianRichards/game">View Code</a>
-              <a class="infoBtn" href="#">
-                <img class="iconImage" id="info3" src="{% static 'webapp/images/infoIcon.png' %}">
-              </a>
-            </div>
-          </div>
-        </div>
-    </div>
-    </div>
-
   <div class="projectText">
     <div id="divBox0">
       <h1>Portfolio Website Info</h1>
@@ -59,11 +23,231 @@
       <h1>Don't Take That Bait Game</h1>
       <p>This game was built with python and the pygame module. It is inspired by flappy bird.</p>
     </div>
+    <div id="divBox4">
+      <h1>ASP.NET Core Project</h1>
+      <p>Built using ASP.NET Core and SQLite</p>
+    </div>
+
+  </div>
+  <div class="imageSection">
+      <div class="container paddingContainer">
+        <div class="row">
+          <div class="paddingGrid">
+            <div class="col-md-4 col-sm-12 mb-4 borderEraser">
+              <p>Python Flask</p>
+              <div class="info">
+                <a class="btn btn-dark alignLeft btn1" href="http://sebastianrichards.pythonanywhere.com/">View Project</a>
+                <a class="btn btn-dark alignRight btn2" href="https://github.com/SebastianRichards/FlaskBlog">View Code</a>
+                <a class="infoBtn" href="#">
+                  <img class="iconImage" id="info1" src="{% static 'webapp/images/infoIcon.png' %}">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 mb-4 borderEraser mobileHeightz">
+              <p>Digital Twin</p>
+              <div class="info">
+                <a class="btn btn-dark alignLeft" href="{% url 'digitaltwin' %}">View Project</a>
+                <a class="btn btn-dark alignRight" href="{% url 'thesis' %}">View Thesis</a>
+                <a class="infoBtn" href="#">
+                  <img class="iconImage" id="info2" src="{% static 'webapp/images/infoIcon.png' %}">
+                </a>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-12 mb-4 borderEraser">
+            <p>Game</p>
+            <div class="info">
+              <a class="btn btn-dark alignLeft" href="{% url 'game' %}">View Project</a>
+              <a class="btn btn-dark alignRight" href="https://github.com/SebastianRichards/game">View Code</a>
+              <a class="infoBtn" href="#">
+                <img class="iconImage" id="info3" src="{% static 'webapp/images/infoIcon.png' %}">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 borderEraser pt-2">
+            <p>Asp Net</p>
+            <div class="info">
+              <a class="btn btn-dark alignLeft btn1" href="{% url 'aspnetproject' %}">View Project</a>
+              <a class="btn btn-dark alignRight btn2" href="https://github.com/SebastianRichards/asp.netVerto">View Code</a>
+              <a class="infoBtn" href="#">
+                <img class="iconImage" id="info4" src="{% static 'webapp/images/infoIcon.png' %}">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 borderEraser pt-2">
+            <p>Current Project</p>
+            <div class="info">
+              <a class="btn btn-dark alignLeft btn1" href="{% url 'currentproject' %}">View Project</a>
+              <a class="btn btn-dark alignRight btn2" href="https://github.com/SebastianRichards/cakeSite">View Code</a>
+              <a class="infoBtn" href="#">
+                <img class="iconImage" id="info4" src="{% static 'webapp/images/infoIcon.png' %}">
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+
+
+</div>
+-->
+
+
+
+
+
+
+<div class=projectsPage>
+
+  <div class="projectSection">
+
+    <div class="grid-container">
+   
+      <div class="projectCell">
+        <div class="paddingCell">
+
+          
+
+          <div class="project1">Digital twin for virtual microreactor project</div>
+          <div class="project2">Masters project which interfaced a MERN stack web application to a virtual microreactor environment using OPC UA which was awarded a 1st grade. More details such as the SRS document can be found within the thesis.</div>
+          <div class="project3">ReactJS | ExpressJS | MongoDB | OPC UA</div>
+
+          <div class="icon-container-container">
+            <div class="icon-container">
+              
+              <div class="iconCell">
+                <a href="{% url 'thesis' %}" class="neonBtn2">View Thesis</a>
+              </div>
+              <div>
+                <a class="iconCell2" href="https://github.com/SebastianRichards/ReactProject">
+                  <img src="{% static 'webapp/images/gitimage.png' %}" alt="logoimg" class="srlogoimage">
+                </a>
+              </div>
+            
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="projectCell">
+
+        <div class="paddingCell">
+
+          
+
+          <div class="project1">Python Flask Social Media Microblogging Project</div>
+          <div class="project2">This full stack web applications allows users to create an account, personalise their profile with an image and username and comment on a shared feed. Users can edit and delete posts as well as comment and 'like'.</div>
+          <div class="project3">Python | Flask | SQLite | HTML,CSS</div>
+
+          <div class="icon-container-container">
+            <div class="icon-container">
+              
+              <div class="iconCell">
+                <a href="http://sebastianrichards.pythonanywhere.com/" class="neonBtn2">View Project</a>
+              </div>
+              <div>
+                <a class="iconCell2" href="https://github.com/SebastianRichards/FlaskBlog">
+                  <img src="{% static 'webapp/images/gitimage.png' %}" alt="logoimg" class="srlogoimage">
+                </a>
+              </div>
+            
+            </div>
+          </div>
+
+        </div>
+          
+      </div>
+      <div class="projectCell">
+        <div class="paddingCell">
+
+          
+
+          <div class="project1">ASP.NET Full Stack Web Demo</div>
+          <div class="project2">Built using ASP.NET Core with HTML Razor in the frontend and SQLite in the backend, this application is a demo showing a desktop/mobile responsive web application with admin functionality. All content is stored in the database.</div>
+          <div class="project3">ASP.NET Core | SQLite | Razor | HTML,CSS</div>
+
+          <div class="icon-container-container">
+            <div class="icon-container">
+              
+              <div class="iconCell">
+                <a href="{% url 'aspnetproject' %}" class="neonBtn2">View Project</a>
+              </div>
+              <div>
+                <a class="iconCell2" href="https://github.com/SebastianRichards/asp.netVerto">
+                  <img src="{% static 'webapp/images/gitimage.png' %}" alt="logoimg" class="srlogoimage">
+                </a>
+                
+              </div>
+            
+            </div>
+          </div>
+
+        </div>
+          
+      </div>
+    
+
+      <div class="projectCell">
+        <div class="paddingCell">
+
+          
+
+          <div class="project1">Python Game</div>
+          <div class="project2">Built using the pygame module for python this game is inspired by flappybird and uses an OOP model to display random objects in an infinite game loop. All artwork is done using pixelart. Instructions to download and play can be found on view project.</div>
+          <div class="project3">Python | Pygame</div>
+
+          <div class="icon-container-container">
+            <div class="icon-container">
+              
+              <div class="iconCell">
+                <a class="neonBtn2" href="{% url 'game' %}">View Project</a>
+              </div>
+              <div>
+                <a href="https://github.com/SebastianRichards/game" class="iconCell2">
+                  <img src="{% static 'webapp/images/gitimage.png' %}" alt="logoimg" class="srlogoimage">
+                </a>
+              </div>
+            
+            </div>
+          </div>
+
+        </div>
+          
+      </div>
+      <div class="projectCell">
+        <div class="paddingCell">
+
+          
+
+          <div class="project1">Current Project</div>
+          <div class="project2">In the works this project is an ASP.NET Core full stack web application with reactJS soon to be a website for a cake company with e-commerce and admin functionality. A plan was drafted up with the clients using figma to determine the website layout and functionality.</div>
+          <div class="project3">ASP.NET Core | ReactJS | SQLite | HTML,CSS</div>
+
+          <div class="icon-container-container">
+            <div class="icon-container">
+              
+              <div class="iconCell">
+                <a class="neonBtn2" href="{% url 'currentproject' %}">View Project</a>
+              </div>
+              <div>
+                <a class="iconCell2" href="https://github.com/SebastianRichards/cakeSite">
+                  <img src="{% static 'webapp/images/gitimage.png' %}" alt="logoimg" class="srlogoimage">
+                </a>
+              </div>
+            
+            </div>
+          </div>
+
+        </div>
+          
+      </div>
+    </div>
 
   </div>
 
 </div>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
 
 <script>
@@ -72,6 +256,8 @@
         
     tl.fromTo(".projectsPage", { opacity: 0 }, { opacity: 1, duration: 0.2 });
 
+  
+    
 
 </script>
 
