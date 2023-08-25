@@ -22,7 +22,7 @@ function adjustClass() {
 }
 
 
-adjustClass();
+
 
 
 window.addEventListener('resize', adjustClass);
