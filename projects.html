@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anybody:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sebastian Richards - Projects</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/tabicon.png" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="container navcolor">
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logosr.png" alt="logoimg" class="srlogoimage" />
+        </a>
+
+        <button
+          class="navbar-toggler toggleButton"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#toggleMobileMenu"
+          aria-controls="toggleMobileMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="toggleMobileMenu"
+        >
+          <ul class="navbar-nav ms-auto text-center alignIt">
+            <li><a class="nav-link w-100" href="cv.html">CV</a></li>
+            <li><a class="nav-link" href="projects.html">Projects</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Projects Content -->
+    <div class="projectsPage">
+      <div class="projectSection">
+        <div class="grid-container">
+          <!-- Digital Twin Project -->
+          <div class="projectCell">
+            <div class="paddingCell">
+              <div class="project1">
+                Digital twin for virtual microreactor project
+              </div>
+              <div class="project2">
+                Masters project which interfaced a MERN stack web application to
+                a virtual microreactor environment using OPC UA which was
+                awarded a 1st grade. More details such as the SRS document can
+                be found within the thesis.
+              </div>
+              <div class="project3">ReactJS | ExpressJS | MongoDB | OPC UA</div>
+
+              <div class="icon-container-container">
+                <div class="icon-container">
+                  <div class="iconCell">
+                    <a href="thesis.html" class="neonBtn2">View Project</a>
+                  </div>
+                  <div>
+                    <a
+                      class="iconCell2"
+                      href="https://github.com/SebastianRichards/ReactProject"
+                    >
+                      <img
+                        src="images/gitimage.png"
+                        alt="logoimg"
+                        class="srlogoimage"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flask Project -->
+          <div class="projectCell">
+            <div class="paddingCell">
+              <div class="project1">
+                Python Flask Social Media Microblogging Project
+              </div>
+              <div class="project2">
+                This full stack web applications allows users to create an
+                account, personalise their profile with an image and username
+                and comment on a shared feed. Users can edit and delete posts as
+                well as comment and 'like'.
+              </div>
+              <div class="project3">Python | Flask | SQLite | HTML,CSS</div>
+
+              <div class="icon-container-container">
+                <div class="icon-container">
+                  <div class="iconCell">
+                    <a
+                      href="http://sebastianrichards.pythonanywhere.com/"
+                      class="neonBtn2"
+                      >View Project</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      class="iconCell2"
+                      href="https://github.com/SebastianRichards/FlaskBlog"
+                    >
+                      <img
+                        src="images/gitimage.png"
+                        alt="logoimg"
+                        class="srlogoimage"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ASP.NET Project -->
+          <div class="projectCell">
+            <div class="paddingCell">
+              <div class="project1">ASP.NET Full Stack Web Demo</div>
+              <div class="project2">
+                Built using ASP.NET Core with HTML Razor in the frontend and
+                SQLite in the backend, this application is a demo showing a
+                desktop/mobile responsive web application with admin
+                functionality. All content is stored in the database.
+              </div>
+              <div class="project3">
+                ASP.NET Core | SQLite | Razor | HTML,CSS
+              </div>
+
+              <div class="icon-container-container">
+                <div class="icon-container">
+                  <div class="iconCell">
+                    <a href="aspnetproject.html" class="neonBtn2"
+                      >View Project</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      class="iconCell2"
+                      href="https://github.com/SebastianRichards/asp.netVerto"
+                    >
+                      <img
+                        src="images/gitimage.png"
+                        alt="logoimg"
+                        class="srlogoimage"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python Game -->
+          <div class="projectCell">
+            <div class="paddingCell">
+              <div class="project1">Python Game</div>
+              <div class="project2">
+                Built using the pygame module for python this game is inspired
+                by flappybird and uses an OOP model to display random objects in
+                an infinite game loop. All artwork is done using pixelart.
+                Instructions to download and play can be found on view project.
+              </div>
+              <div class="project3">Python | Pygame</div>
+
+              <div class="icon-container-container">
+                <div class="icon-container">
+                  <div class="iconCell">
+                    <a class="neonBtn2" href="game.html">View Project</a>
+                  </div>
+                  <div>
+                    <a
+                      href="https://github.com/SebastianRichards/game"
+                      class="iconCell2"
+                    >
+                      <img
+                        src="images/gitimage.png"
+                        alt="logoimg"
+                        class="srlogoimage"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Current Project -->
+          <div class="projectCell">
+            <div class="paddingCell">
+              <div class="project1">Javascript Game</div>
+              <div class="project2">
+                Made with just vanilla js and html canvas this game is inspired
+                by the original Pokemon games. The illustrations were made in
+                pixelart by myself with my fiancee doing the monster designs.
+                The overworld and battle music was made by myself using Logic
+                Pro X.
+              </div>
+              <div class="project3">Javascript | Html Canvas</div>
+
+              <div class="icon-container-container">
+                <div class="icon-container">
+                  <div class="iconCell">
+                    <a class="neonBtn2" href="http://213.165.90.245/topdowngame"
+                      >View Project</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      class="iconCell2"
+                      href="https://github.com/SebastianRichards/cakeSite"
+                    >
+                      <img
+                        src="images/gitimage.png"
+                        alt="logoimg"
+                        class="srlogoimage"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div id="footerContainer">
+        <div id="footerCol1">
+          <a id="fcc" href="https://github.com/SebastianRichards">
+            <img id="gitIcon" src="images/gitimage.png" alt="GitHub" />
+          </a>
+        </div>
+        <div id="footerCol3">
+          <a
+            id="fcc"
+            href="https://www.linkedin.com/in/sebastian-richards-306730179/"
+          >
+            <img id="linkedIcon" src="images/linkedicon.png" alt="LinkedIn" />
+          </a>
+        </div>
+        <div id="footerCol2">
+          <a id="fcc" href="mailto:sebastianrichards@me.com">
+            <img id="mailIcon" src="images/mail.png" alt="Email" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+      // GSAP Animation for projects page
+      const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+      tl.fromTo(".projectsPage", { opacity: 0 }, { opacity: 1, duration: 0.2 });
+    </script>
+  </body>
+</html>

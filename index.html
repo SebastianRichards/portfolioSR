@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css?v=2.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anybody:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sebastian Richards - Software Developer</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/tabicon.png" />
+
+    <style>
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Section spacing and full viewport height */
+      .section {
+        min-height: 100vh;
+        padding-top: 80px;
+      }
+
+      /* Fix navigation bar */
+      .navbar-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: rgba(12, 25, 36, 0.95);
+        backdrop-filter: blur(10px);
+      }
+
+      /* Offset for fixed navbar */
+      .section:target {
+        scroll-margin-top: 80px;
+      }
+
+      /* Home section adjustments */
+      #home {
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Floating geometric shapes for visual enhancement -->
+    <div class="floating-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="container navcolor navbar-fixed">
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="#home">
+          <img src="images/logosr.png" alt="logoimg" class="srlogoimage" />
+        </a>
+
+        <button
+          class="navbar-toggler toggleButton"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#toggleMobileMenu"
+          aria-controls="toggleMobileMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="toggleMobileMenu"
+        >
+          <ul class="navbar-nav ms-auto text-center alignIt">
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link w-100" href="#cv">CV</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <div class="homeContainer">
+        <div class="hero-content">
+          <div class="line1 reveal">Hi, my name is</div>
+          <div class="line2 reveal stagger-delay-1">Sebastian Richards.</div>
+          <div class="line3 reveal stagger-delay-2">Software Developer</div>
+          <div class="line4 reveal stagger-delay-3">
+            I am a software developer and recent computer science graduate with
+            experience in working with full stack frameworks to create web
+            applications.
+          </div>
+          <a href="#projects" class="modern-btn reveal stagger-delay-4">
+            <span>View My Work</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="scroll-indicator reveal stagger-delay-5">
+          <span>Scroll</span>
+          <div class="scroll-arrow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="projectsPage">
+        <div class="section-header">
+          <h2 class="section-title reveal">My Projects</h2>
+          <p class="section-subtitle reveal stagger-delay-1">
+            A collection of my recent work showcasing full-stack development,
+            modern web technologies, and creative problem-solving.
+          </p>
+        </div>
+
+        <div class="grid-container">
+          <!-- Digital Twin Project -->
+          <div class="projectCell reveal-scale stagger-delay-1">
+            <div class="paddingCell">
+              <div class="project-content">
+                <div class="project1">
+                  Digital twin for virtual microreactor project
+                </div>
+                <div class="project2">
+                  Masters project which interfaced a MERN stack web application
+                  to a virtual microreactor environment using OPC UA which was
+                  awarded a 1st grade. More details such as the SRS document can
+                  be found within the thesis.
+                </div>
+                <div class="project3">
+                  <span>ReactJS • ExpressJS • MongoDB • OPC UA</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <div class="icon-container">
+                  <button
+                    class="neonBtn2"
+                    onclick="toggleProjectModal('digitalTwin')"
+                  >
+                    <span>View Project</span>
+                  </button>
+                  <a
+                    class="iconCell2"
+                    href="https://github.com/SebastianRichards/ReactProject"
+                    title="View on GitHub"
+                  >
+                    <img
+                      src="images/gitimage.png"
+                      alt="GitHub"
+                      class="srlogoimage"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flask Project -->
+          <div class="projectCell reveal-scale stagger-delay-2">
+            <div class="paddingCell">
+              <div class="project-content">
+                <div class="project1">
+                  Python Flask Social Media Microblogging Project
+                </div>
+                <div class="project2">
+                  This full stack web applications allows users to create an
+                  account, personalise their profile with an image and username
+                  and comment on a shared feed. Users can edit and delete posts
+                  as well as comment and 'like'.
+                </div>
+                <div class="project3">
+                  <span>Python • Flask • SQLite • HTML/CSS</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <div class="icon-container">
+                  <a
+                    href="http://sebastianrichards.pythonanywhere.com/"
+                    class="neonBtn2"
+                    ><span>View Project</span></a
+                  >
+                  <a
+                    class="iconCell2"
+                    href="https://github.com/SebastianRichards/FlaskBlog"
+                    title="View on GitHub"
+                  >
+                    <img
+                      src="images/gitimage.png"
+                      alt="GitHub"
+                      class="srlogoimage"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ASP.NET Project -->
+          <div class="projectCell reveal-scale stagger-delay-3">
+            <div class="paddingCell">
+              <div class="project-content">
+                <div class="project1">ASP.NET Full Stack Web Demo</div>
+                <div class="project2">
+                  Built using ASP.NET Core with HTML Razor in the frontend and
+                  SQLite in the backend, this application is a demo showing a
+                  desktop/mobile responsive web application with admin
+                  functionality. All content is stored in the database.
+                </div>
+                <div class="project3">
+                  <span>ASP.NET Core • SQLite • Razor • HTML/CSS</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <div class="icon-container">
+                  <button
+                    class="neonBtn2"
+                    onclick="toggleProjectModal('aspnet')"
+                  >
+                    <span>View Project</span>
+                  </button>
+                  <a
+                    class="iconCell2"
+                    href="https://github.com/SebastianRichards/asp.netVerto"
+                    title="View on GitHub"
+                  >
+                    <img
+                      src="images/gitimage.png"
+                      alt="GitHub"
+                      class="srlogoimage"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python Game -->
+          <div class="projectCell reveal-scale stagger-delay-4">
+            <div class="paddingCell">
+              <div class="project-content">
+                <div class="project1">Python Game</div>
+                <div class="project2">
+                  Built using the pygame module for python this game is inspired
+                  by flappybird and uses an OOP model to display random objects
+                  in an infinite game loop. All artwork is done using pixelart.
+                  Instructions to download and play can be found on view
+                  project.
+                </div>
+                <div class="project3">
+                  <span>Python • Pygame</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <div class="icon-container">
+                  <button
+                    class="neonBtn2"
+                    onclick="toggleProjectModal('pythonGame')"
+                  >
+                    <span>View Project</span>
+                  </button>
+                  <a
+                    href="https://github.com/SebastianRichards/game"
+                    class="iconCell2"
+                    title="View on GitHub"
+                  >
+                    <img
+                      src="images/gitimage.png"
+                      alt="GitHub"
+                      class="srlogoimage"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- JavaScript Game -->
+          <div class="projectCell reveal-scale stagger-delay-5">
+            <div class="paddingCell">
+              <div class="project-content">
+                <div class="project1">Javascript Game</div>
+                <div class="project2">
+                  Made with just vanilla js and html canvas this game is
+                  inspired by the original Pokemon games. The illustrations were
+                  made in pixelart by myself with my fiancee doing the monster
+                  designs. The overworld and battle music was made by myself
+                  using Logic Pro X.
+                </div>
+                <div class="project3">
+                  <span>Javascript • HTML Canvas</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <div class="icon-container">
+                  <a class="neonBtn2" href="http://213.165.90.245/topdowngame"
+                    ><span>View Project</span></a
+                  >
+                  <a
+                    class="iconCell2"
+                    href="https://github.com/SebastianRichards/cakeSite"
+                    title="View on GitHub"
+                  >
+                    <img
+                      src="images/gitimage.png"
+                      alt="GitHub"
+                      class="srlogoimage"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Detail Modals -->
+    <!-- Digital Twin Project Modal -->
+    <div id="digitalTwinModal" class="project-modal">
+      <div class="project-modal-content">
+        <div class="project-modal-header">
+          <h2>Digital Twin for Virtual Microreactor Project</h2>
+          <button
+            class="close-modal"
+            onclick="toggleProjectModal('digitalTwin')"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="project-modal-body">
+          <div class="project-detail-content">
+            <iframe
+              id="digitalTwinPDF"
+              src="images/1-report.pdf"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <div class="slideContainerDT">
+            <span id="sliderImg1"></span>
+            <span id="sliderImg2"></span>
+            <span id="sliderImg3"></span>
+            <span id="sliderImg4"></span>
+
+            <div class="imageContainerDT">
+              <img
+                src="images/dt1.png"
+                class="sliderImg"
+                alt="Digital Twin Screenshot 1"
+              />
+              <img
+                src="images/dt2.png"
+                class="sliderImg"
+                alt="Digital Twin Screenshot 2"
+              />
+              <img
+                src="images/dt3.png"
+                class="sliderImg"
+                alt="Digital Twin Screenshot 3"
+              />
+              <img
+                src="images/dt4.png"
+                class="sliderImg"
+                alt="Digital Twin Screenshot 4"
+              />
+            </div>
+            <div class="buttonContainer">
+              <a href="#sliderImg1" class="sliderButton"></a>
+              <a href="#sliderImg2" class="sliderButton"></a>
+              <a href="#sliderImg3" class="sliderButton"></a>
+              <a href="#sliderImg4" class="sliderButton"></a>
+            </div>
+          </div>
+
+          <div class="project-links">
+            <a
+              href="https://github.com/SebastianRichards/ReactProject"
+              class="neonBtn2"
+              >GitHub Repository</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ASP.NET Project Modal -->
+    <div id="aspnetModal" class="project-modal">
+      <div class="project-modal-content">
+        <div class="project-modal-header">
+          <h2>ASP.NET Full Stack Web Demo</h2>
+          <button class="close-modal" onclick="toggleProjectModal('aspnet')">
+            &times;
+          </button>
+        </div>
+        <div class="project-modal-body">
+          <div class="project-detail-grid">
+            <img
+              src="images/aspnet1.png"
+              alt="ASP.NET Screenshot 1"
+              class="project-image"
+            />
+            <img
+              src="images/aspnet2.png"
+              alt="ASP.NET Screenshot 2"
+              class="project-image"
+            />
+            <img
+              src="images/aspnet3.png"
+              alt="ASP.NET Screenshot 3"
+              class="project-image"
+            />
+            <img
+              src="images/aspnet4.png"
+              alt="ASP.NET Screenshot 4"
+              class="project-image"
+            />
+            <img
+              src="images/aspnet5.png"
+              alt="ASP.NET Screenshot 5"
+              class="project-image"
+            />
+          </div>
+
+          <div class="project-description">
+            <p>
+              Built using ASP.NET Core with HTML Razor in the frontend and
+              SQLite in the backend, this application is a demo showing a
+              desktop/mobile responsive web application with admin
+              functionality. All content is stored in the database.
+            </p>
+            <p>
+              <strong>Technologies:</strong> ASP.NET Core | SQLite | Razor |
+              HTML,CSS
+            </p>
+          </div>
+
+          <div class="project-links">
+            <a
+              href="https://github.com/SebastianRichards/asp.netVerto"
+              class="neonBtn2"
+              >GitHub Repository</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Python Game Project Modal -->
+    <div id="pythonGameModal" class="project-modal">
+      <div class="project-modal-content">
+        <div class="project-modal-header">
+          <h2>Python Game</h2>
+          <button
+            class="close-modal"
+            onclick="toggleProjectModal('pythonGame')"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="project-modal-body">
+          <div class="game-content">
+            <div class="game-video">
+              <video controls class="vid">
+                <source src="images/dttbclip.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div class="game-info">
+              <div class="game-description">
+                <h3>Game Description</h3>
+                <p>
+                  Built using the pygame module for python this game is inspired
+                  by flappybird and uses an OOP model to display random objects
+                  in an infinite game loop. All artwork is done using pixelart.
+                </p>
+
+                <h3>How to Download and Play</h3>
+                <p>1. Download the game files from the GitHub repository</p>
+                <p>2. Make sure you have Python installed on your system</p>
+                <p>3. Install pygame: <code>pip install pygame</code></p>
+                <p>4. Run the game: <code>python main.py</code></p>
+              </div>
+
+              <div class="game-features">
+                <h3>Features</h3>
+                <ul>
+                  <li>Infinite scrolling gameplay</li>
+                  <li>Custom pixel art graphics</li>
+                  <li>Object-oriented programming structure</li>
+                  <li>Collision detection system</li>
+                  <li>Score tracking</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/SebastianRichards/game" class="neonBtn2"
+              >GitHub Repository</a
+            >
+            <a href="images/Game.zip" download class="neonBtn2"
+              >Download Game</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CV Section -->
+    <!-- CV Section -->
+    <section id="cv" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">My Resume</h2>
+          <p class="section-subtitle">
+            Download my complete professional experience
+          </p>
+        </div>
+
+        <div class="cv-container reveal-scale stagger-delay-1">
+          <div class="cv-preview">
+            <img
+              class="cv-image"
+              src="images/sebastianRichardsCV.png"
+              alt="Sebastian Richards CV"
+            />
+            <div class="cv-overlay">
+              <div class="cv-actions">
+                <a
+                  href="images/sebastianRichardsCV.pdf"
+                  download="Sebastian_Richards_CV"
+                  class="neonBtn primary-btn"
+                >
+                  <span>Download PDF</span>
+                </a>
+                <a
+                  href="images/sebastianRichardsCV.pdf"
+                  target="_blank"
+                  class="neonBtn secondary-btn"
+                >
+                  <span>View Online</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Let's connect and discuss opportunities
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal-left stagger-delay-1">
+            <div class="contact-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Email</h3>
+            <a href="mailto:sebastianrichards@me.com"
+              >sebastianrichards@me.com</a
+            >
+          </div>
+
+          <div class="contact-card reveal-scale stagger-delay-2">
+            <div class="contact-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.59531 1.99522 8.06675 2.16708 8.43915 2.48353C8.81156 2.79999 9.06349 3.23945 9.14999 3.72C9.31073 4.68007 9.58348 5.62273 9.95999 6.53C10.0985 6.88792 10.1432 7.27691 10.0898 7.65382C10.0364 8.03073 9.88705 8.38785 9.65999 8.68L8.38999 9.95C9.93347 12.4135 12.1865 14.6665 14.65 16.21L15.92 14.94C16.2122 14.7129 16.5693 14.5636 16.9462 14.5102C17.3231 14.4568 17.7121 14.5015 18.07 14.64C18.9773 15.0165 19.9199 15.2893 20.88 15.45C21.3656 15.5372 21.8094 15.7926 22.1256 16.1696C22.4418 16.5466 22.6095 17.0222 22.6 17.51L22 16.92Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Phone</h3>
+            <a href="tel:+447542930048">+44 7542930048</a>
+          </div>
+
+          <div class="contact-card reveal-right stagger-delay-3">
+            <div class="contact-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 8C16 10.21 14.21 12 12 12C9.79 12 8 10.21 8 8C8 5.79 9.79 4 12 4C14.21 4 16 5.79 16 8ZM12 14C16.42 14 20 15.79 20 18V20H4V18C4 15.79 7.58 14 12 14Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <h3>LinkedIn</h3>
+            <a
+              href="https://www.linkedin.com/in/sebastian-richards-306730179/"
+              target="_blank"
+              >Connect with me</a
+            >
+          </div>
+        </div>
+
+        <div class="cta-section reveal-scale stagger-delay-4">
+          <p class="cta-text">Ready to work together?</p>
+          <a
+            href="mailto:sebastianrichards@me.com"
+            class="neonBtn primary-btn large"
+          >
+            <span>Send me a message</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div id="footerContainer">
+        <div id="footerCol1">
+          <a id="fcc" href="https://github.com/SebastianRichards">
+            <img id="gitIcon" src="images/gitimage.png" alt="GitHub" />
+          </a>
+        </div>
+        <div id="footerCol3">
+          <a
+            id="fcc"
+            href="https://www.linkedin.com/in/sebastian-richards-306730179/"
+          >
+            <img id="linkedIcon" src="images/linkedicon.png" alt="LinkedIn" />
+          </a>
+        </div>
+        <div id="footerCol2">
+          <a id="fcc" href="mailto:sebastianrichards@me.com">
+            <img id="mailIcon" src="images/mail.png" alt="Email" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Modern Scroll-Triggered Animation System
+
+      // Intersection Observer for scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          }
+        });
+      }, observerOptions);
+
+      // Observe all elements with reveal classes
+      document
+        .querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-scale")
+        .forEach((el) => {
+          observer.observe(el);
+        });
+
+      // Navbar scroll effect and navigation updates (combined for performance)
+      let lastScrollY = window.scrollY;
+      const navbar = document.querySelector(".navbar-fixed");
+      let ticking = false;
+
+      function updateScrollEffects() {
+        const currentScrollY = window.scrollY;
+
+        // Navbar scroll effects
+        if (currentScrollY > 100) {
+          navbar.classList.add("navbar-scrolled");
+        } else {
+          navbar.classList.remove("navbar-scrolled");
+        }
+
+        // Hide/show navbar on scroll direction
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+          navbar.style.transform = "translateY(-100%)";
+        } else {
+          navbar.style.transform = "translateY(0)";
+        }
+
+        // Parallax effect for floating shapes
+        const shapes = document.querySelectorAll(".shape");
+        shapes.forEach((shape, index) => {
+          const speed = 0.1 + index * 0.05;
+          const yPos = currentScrollY * speed;
+          shape.style.transform = `translateY(${yPos}px)`;
+        });
+
+        // Update active navigation link
+        let current = "";
+        const sections = document.querySelectorAll("section");
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (currentScrollY >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+
+        lastScrollY = currentScrollY;
+        ticking = false;
+      }
+
+      // Optimized scroll handler using requestAnimationFrame
+      function handleScroll() {
+        if (!ticking) {
+          requestAnimationFrame(updateScrollEffects);
+          ticking = true;
+        }
+      }
+
+      // Add passive scroll listener for better performance
+      window.addEventListener("scroll", handleScroll, { passive: true });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Mobile menu toggle
+      const mobileToggle = document.querySelector(".navbar-toggler");
+      const mobileMenu = document.querySelector(".navbar-nav");
+
+      if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener("click", () => {
+          mobileMenu.classList.toggle("show");
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu.classList.remove("show");
+          });
+        });
+      }
+
+      // Project Modal functionality (existing)
+      function toggleProjectModal(projectId) {
+        const modal = document.getElementById(projectId + "Modal");
+        if (modal.style.display === "block") {
+          modal.style.display = "none";
+          document.body.style.overflow = "auto";
+        } else {
+          modal.style.display = "block";
+          document.body.style.overflow = "hidden";
+        }
+      }
+
+      // Close modal when clicking outside of it (optimized)
+      document.addEventListener(
+        "click",
+        function (event) {
+          if (event.target.classList.contains("project-modal")) {
+            event.target.style.display = "none";
+            document.body.style.overflow = "auto";
+          }
+        },
+        { passive: true }
+      );
+
+      // Close modal with Escape key (optimized)
+      document.addEventListener(
+        "keydown",
+        function (event) {
+          if (event.key === "Escape") {
+            const openModal = document.querySelector(
+              '.project-modal[style*="block"]'
+            );
+            if (openModal) {
+              openModal.style.display = "none";
+              document.body.style.overflow = "auto";
+            }
+          }
+        },
+        { passive: true }
+      );
+
+      // Initialize animations on page load
+      document.addEventListener("DOMContentLoaded", function () {
+        // Add a small delay before triggering home section animations
+        setTimeout(() => {
+          document.querySelectorAll("#home .reveal").forEach((el) => {
+            el.classList.add("active");
+          });
+        }, 300);
+      });
+    </script>
+  </body>
+</html>

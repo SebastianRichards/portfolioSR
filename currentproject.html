@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anybody:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sebastian Richards - Current Project</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/tabicon.png" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="container navcolor">
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logosr.png" alt="logoimg" class="srlogoimage" />
+        </a>
+
+        <button
+          class="navbar-toggler toggleButton"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#toggleMobileMenu"
+          aria-controls="toggleMobileMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="toggleMobileMenu"
+        >
+          <ul class="navbar-nav ms-auto text-center alignIt">
+            <li><a class="nav-link w-100" href="cv.html">CV</a></li>
+            <li><a class="nav-link" href="projects.html">Projects</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Current Project Content -->
+    <div class="contactPage">
+      <div class="contactDetails">
+        <h1 class="contactFont">Current Project</h1>
+        <p class="font-weight-light text-light">
+          This project is currently in development - an ASP.NET Core full stack
+          web application with ReactJS that will soon become a website for a
+          cake company with e-commerce and admin functionality. A plan was
+          drafted up with the clients using Figma to determine the website
+          layout and functionality.
+        </p>
+        <p class="font-weight-light text-light">
+          Technologies: ASP.NET Core, ReactJS, SQLite, HTML, CSS
+        </p>
+        <p class="font-weight-light text-light">
+          <a href="https://github.com/SebastianRichards/cakeSite"
+            >View on GitHub</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div id="footerContainer">
+        <div id="footerCol1">
+          <a id="fcc" href="https://github.com/SebastianRichards">
+            <img id="gitIcon" src="images/gitimage.png" alt="GitHub" />
+          </a>
+        </div>
+        <div id="footerCol3">
+          <a
+            id="fcc"
+            href="https://www.linkedin.com/in/sebastian-richards-306730179/"
+          >
+            <img id="linkedIcon" src="images/linkedicon.png" alt="LinkedIn" />
+          </a>
+        </div>
+        <div id="footerCol2">
+          <a id="fcc" href="mailto:sebastianrichards@me.com">
+            <img id="mailIcon" src="images/mail.png" alt="Email" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+      // GSAP Animation
+      const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+      tl.fromTo(".contactPage", { opacity: 0 }, { opacity: 1, duration: 0.2 });
+    </script>
+  </body>
+</html>
